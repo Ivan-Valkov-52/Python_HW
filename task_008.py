@@ -6,5 +6,5 @@ number = int(input('Введите число N: '))
 my_list = []
 for num in range(1,number + 1):
     my_list.append(round((1 + 1/ num)**num, 2))
-print(my_list)    
-print(sum(my_list))
+print(f'Для n = {number}:', my_list)    
+print(f'Сумма {sum(my_list)}')
