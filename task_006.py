@@ -6,8 +6,6 @@
 number = input('Введите любое число: ')
 sum_number = 0
 for num in number:
-    if num != "," and num != "." and num != 0 :
+    if num.isdigit(): # мой вариант num != "," and num != "." and num != 0
         sum_number+=int(num)
-    else:
-        continue
 print(f'{number} -> {sum_number}')

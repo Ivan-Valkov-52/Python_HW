@@ -15,5 +15,6 @@ def factors(number):
         factors.append(int(number))
     return factors
 
+
 number = int(input('Введите натуральное число N: '))
 print(number, '=', ' x '.join(str(num) for num in factors(number)))
